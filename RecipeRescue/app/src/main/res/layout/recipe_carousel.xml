@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:id="@+id/MainCarousel"
+        android:focusableInTouchMode="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:id="@+id/CarouselRecipeContainer"
+        android:padding="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="_title_"
+            android:id="@+id/actualtitle"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Ingredients:"
+            android:textSize="12sp"
+            android:id="@+id/ingredientsheader"
+            android:textColor="#84010001"
+            android:layout_below="@+id/actualtitle"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="_ingredients_"
+            android:textSize="12sp"
+            android:id="@+id/ingredientsactual"
+            android:layout_below="@+id/ingredientsheader"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Preparation Time: "
+            android:textSize="12sp"
+            android:id="@+id/timeheader"
+            android:textColor="#84010001"
+            android:layout_below="@+id/ingredientsactual"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="_time_"
+            android:textSize="12sp"
+            android:id="@+id/time_actual"
+            android:singleLine="true"
+            android:layout_alignTop="@+id/timeheader"
+            android:layout_toEndOf="@+id/timeheader" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Recipe Link: "
+            android:textSize="12sp"
+            android:id="@+id/linkheader"
+            android:textColor="#84010001"
+            android:layout_below="@+id/timeheader"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="_recipelink_"
+            android:textSize="12sp"
+            android:id="@+id/recipelinkactual"
+            android:singleLine="true"
+            android:textColor="#010001"
+            android:layout_below="@+id/linkheader"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CarouselRecipeContainer"
+            android:layout_above="@+id/mapsButton"/>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="upvote"
+        android:id="@+id/upvoteButton"
+        android:onClick="upvoteClickHandler"
+        android:layout_alignBottom="@+id/downvoteButton"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Downvote"
+        android:id="@+id/downvoteButton"
+        android:onClick="downvoteClickHandler"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="score"
+        android:id="@+id/scoreField"
+        android:layout_alignBottom="@+id/downvoteButton"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maps Button"
+        android:id="@+id/mapsButton"
+        android:onClick="mapsButtonClickHandler"
+        android:background="@drawable/maps_icon"
+        android:layout_above="@+id/downvoteButton"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

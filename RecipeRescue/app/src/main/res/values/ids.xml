@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="addressEditText" type="id" />
+    <item name="btnFind" type="id" />
+    <item name="locationText" type="id" />
+    <item name="btn_find" type="id" />
+    <item name="actv_Search" type="id" />
+    <item name="placeText" type="id">1</item>
+</resources>

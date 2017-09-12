@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.group8.reciperescue.DebugActivity">
+
+    <item android:id="@+id/SplashScreen"
+        android:title="@string/title_splash"/>
+
+    <item android:id="@+id/MainPage"
+        android:title="@string/title_main"/>
+
+    <item android:id="@+id/PreferencesPage"
+        android:title="@string/title_preferences"/>
+
+    <item android:id="@+id/FirebasePage"
+        android:title="@string/title_firebase" />
+
+    <item android:id="@+id/YummlyPage"
+        android:title="@string/title_yummly" />
+
+    <item android:id="@+id/F2FPage"
+        android:title="@string/title_f2f" />
+
+    <item android:id="@+id/RecipeAPIPage"
+        android:title="@string/title_activity_recipe_api" />
+</menu>

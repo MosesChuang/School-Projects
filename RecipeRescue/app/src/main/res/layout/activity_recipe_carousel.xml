@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:id="@+id/firebase">
+
+    <RelativeLayout
+        android:id="@+id/top_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="0.5">
+
+
+       <!-- <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Recipe"
+            android:id="@+id/textView"
+            android:layout_marginTop="46dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/buttonDislike" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bot_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5">
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Like"
+            android:id="@+id/buttonLike"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dislike"
+            android:id="@+id/buttonDislike"
+            android:layout_alignTop="@+id/buttonLike"
+            android:layout_alignStart="@+id/buttonNext" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:id="@+id/buttonNext"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+            android:id="@+id/buttonPrevious"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:id="@+id/ratingView"
+            android:layout_below="@+id/textView"
+            android:layout_alignEnd="@+id/buttonDislike"
+            android:layout_marginTop="44dp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/actualtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/ingredientsactual"
+        android:text="_title_"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/timeheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ingredientsheader"
+        android:text="Cooking Time:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/time_actual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recipelinkheader"
+        android:layout_alignStart="@+id/ingredientsactual"
+        android:text="_time_"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/ingredientsheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titleheader"
+        android:text="Ingredients:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/ingredientsactual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/time_actual"
+        android:layout_centerHorizontal="true"
+        android:text="_ingredients_"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/recipelinkheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/timeheader"
+        android:text="Recipe Link:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/recipelinkactual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/time_actual"
+        android:layout_below="@+id/time_actual"
+        android:text="_recipelink_"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/scoreheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/recipelinkheader"
+        android:text="Score:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/downvotebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:text="downvote" />
+
+    <Button
+        android:id="@+id/upvotebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/downvotebutton"
+        android:background="@android:color/transparent"
+        android:text="UPVOTE" />
+
+
+    <Button
+        android:id="@+id/previousbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent"
+        android:onClick="previousButtonClickHandler"
+        android:text="Previous" />
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/previousbutton"
+        android:layout_alignStart="@+id/upvotebutton"
+        android:background="@android:color/transparent"
+        android:onClick="nextButtonClickHandler"
+        android:text="Next" />
+
+    <TextView
+        android:id="@+id/scoreactual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/recipelinkactual"
+        android:layout_below="@+id/recipelinkactual"
+        android:layout_gravity="center_vertical"
+        android:text="_score_"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
